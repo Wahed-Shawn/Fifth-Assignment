@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="hind-madurai-font">
+<body class="hind-madurai-font xl:mx-auto">
+    <!-- Hero Section -->
     <section>
         <nav class="w-full h-14 flex items-center justify-between backdrop-blur-2xl p-2 fixed left-0 top-0">
             <div class="flex items-center gap-1 h-[40px]">
@@ -38,7 +39,7 @@
                 </div>
                 <div
                     class="w-[4rem] h-[2.5rem] bg-[rgba(65,255,106,0.10)] rounded-4xl flex items-center justify-evenly">
-                    <p class="text-[20px]">0</p>
+                    <p class="text-[20px]">100</p>
                     <img src="./assets/coin.png" class="h-[60%]">
                 </div>
                 <div class="w-[4.4rem] h-[2.5rem] bg-[#00A63E] rounded-4xl flex items-center justify-evenly text-white">
@@ -47,7 +48,9 @@
                 </div>
             </div>
         </nav>
-        <div class="h-60 bg-[#013223] text-white mt-14 flex flex-col items-center justify-center gap-5">
+
+        <div
+            class="h-60 bg-[#013223] bg-gradient-to-r from-[#013223]from-0% via-[#006747] via-50% to-[#013223] to-100% text-white mt-14 flex flex-col items-center justify-center gap-5">
             <img src="./assets/logo-dark.png" class="h-[37%]">
             <p class="font-bold text-[22px]">Emergency Service Directory</p>
             <p class="text-center font-semibold">Government Emergency Services at Your Fingertip – A Project by
@@ -55,13 +58,15 @@
         </div>
     </section>
 
-    <section class="bg-[rgba(65,255,106,0.25)] p-3 grid grid-cols-2 gap-3" id="card-container">
-        <div class="bg-white h-72 p-3 flex flex-col justify-between rounded-2xl">
+    <!-- Card Section -->
+    <section class="bg-[rgba(65,255,106,0.10)] p-3 grid grid-cols-1 justify-items-center gap-4" id="card-container">
+
+        <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg">
             <div class="flex items-center justify-between h-[20%]">
-                <div class="h-full w-[28%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
+                <div class="h-full w-[20%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
                     <img src="./assets/emergency.png" class="h-[60%]">
                 </div>
-                <i class="fa-regular fa-heart text-[20px]"></i>
+                <i class="fa-regular fa-heart text-[25px] cursor-pointer"></i>
             </div>
 
             <div>
@@ -69,7 +74,7 @@
                 <p class="text-gray-500">National Emergency</p>
             </div>
             <div>
-                <h1 class="font-extrabold text-4xl">999</h1>
+                <h1 class="font-extrabold text-3xl mb-1">999</h1>
                 <span class="bg-gray-200 w-[20%] rounded-xl px-3 py-1 text-gray-500">All</span>
 
             </div>
@@ -89,12 +94,12 @@
             </div>
         </div>
 
-        <div class="bg-white h-72 p-3 flex flex-col justify-between rounded-2xl">
+        <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg">
             <div class="flex items-center justify-between h-[20%]">
-                <div class="h-full w-[28%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
-                    <img src="./assets/police.png" class="h-[60%]">
+                <div class="h-full w-[20%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
+                    <img src="./assets/police.png" class="h-[70%]">
                 </div>
-                <i class="fa-regular fa-heart text-[20px]"></i>
+                <i class="fa-regular fa-heart text-[25px] cursor-pointer"></i>
             </div>
 
             <div>
@@ -102,7 +107,7 @@
                 <p class="text-gray-500">Police</p>
             </div>
             <div>
-                <h1 class="font-extrabold text-4xl">999</h1>
+                <h1 class="font-extrabold text-3xl mb-1">999</h1>
                 <span class="bg-gray-200 w-[20%] rounded-xl px-3 py-1 text-gray-500">Police</span>
 
             </div>
@@ -122,12 +127,12 @@
             </div>
         </div>
 
-        <div class="bg-white h-72 p-3 flex flex-col justify-between rounded-2xl">
+        <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg">
             <div class="flex items-center justify-between h-[20%]">
-                <div class="h-full w-[28%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
-                    <img src="./assets/fire-service.png" class="h-[60%]">
+                <div class="h-full w-[20%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
+                    <img src="./assets/fire-service.png" class="h-[70%]">
                 </div>
-                <i class="fa-regular fa-heart text-[20px]"></i>
+                <i class="fa-regular fa-heart text-[25px] cursor-pointer"></i>
             </div>
 
             <div>
@@ -135,7 +140,7 @@
                 <p class="text-gray-500">Fire Service</p>
             </div>
             <div>
-                <h1 class="font-extrabold text-4xl">999</h1>
+                <h1 class="font-extrabold text-3xl mb-1">999</h1>
                 <span class="bg-gray-200 w-[20%] rounded-xl px-3 py-1 text-gray-500">Fire</span>
 
             </div>
@@ -155,12 +160,12 @@
             </div>
         </div>
 
-        <div class="bg-white h-72 p-3 flex flex-col justify-between rounded-2xl">
+        <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg">
             <div class="flex items-center justify-between h-[20%]">
-                <div class="h-full w-[28%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
-                    <img src="./assets/ambulance.png" class="h-[60%]">
+                <div class="h-full w-[20%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
+                    <img src="./assets/ambulance.png" class="h-[70%]">
                 </div>
-                <i class="fa-regular fa-heart text-[20px]"></i>
+                <i class="fa-regular fa-heart text-[25px] cursor-pointer"></i>
             </div>
 
             <div>
@@ -168,8 +173,9 @@
                 <p class="text-gray-500">Ambulance</p>
             </div>
             <div>
-                <h1 class="font-extrabold text-[30px]">1994-999999</h1>
+                <h1 class="font-extrabold text-3xl mb-1">1994-999999</h1>
                 <span class="bg-gray-200 w-[20%] rounded-xl px-3 py-1 text-gray-500">Health</span>
+
             </div>
 
             <div class="flex justify-between">
@@ -187,12 +193,12 @@
             </div>
         </div>
 
-        <div class="bg-white h-72 p-3 flex flex-col justify-between rounded-2xl">
+        <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg">
             <div class="flex items-center justify-between h-[20%]">
-                <div class="h-full w-[28%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
+                <div class="h-full w-[20%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
                     <img src="./assets/emergency.png" class="h-[60%]">
                 </div>
-                <i class="fa-regular fa-heart text-[20px]"></i>
+                <i class="fa-regular fa-heart text-[25px] cursor-pointer"></i>
             </div>
 
             <div>
@@ -200,7 +206,7 @@
                 <p class="text-gray-500">Women & Child Helpline</p>
             </div>
             <div>
-                <h1 class="font-extrabold text-4xl">109</h1>
+                <h1 class="font-extrabold text-3xl mb-1">109</h1>
                 <span class="bg-gray-200 w-[20%] rounded-xl px-3 py-1 text-gray-500">Help</span>
 
             </div>
@@ -220,12 +226,12 @@
             </div>
         </div>
 
-        <div class="bg-white h-72 p-3 flex flex-col justify-between rounded-2xl">
+        <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg">
             <div class="flex items-center justify-between h-[20%]">
-                <div class="h-full w-[28%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
+                <div class="h-full w-[20%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
                     <img src="./assets/emergency.png" class="h-[60%]">
                 </div>
-                <i class="fa-regular fa-heart text-[20px]"></i>
+                <i class="fa-regular fa-heart text-[25px] cursor-pointer"></i>
             </div>
 
             <div>
@@ -233,7 +239,7 @@
                 <p class="text-gray-500">Anti-Corruption</p>
             </div>
             <div>
-                <h1 class="font-extrabold text-4xl">106</h1>
+                <h1 class="font-extrabold text-3xl mb-1">106</h1>
                 <span class="bg-gray-200 w-[20%] rounded-xl px-3 py-1 text-gray-500">Govt.</span>
 
             </div>
@@ -253,12 +259,12 @@
             </div>
         </div>
 
-        <div class="bg-white h-72 p-3 flex flex-col justify-between rounded-2xl">
+        <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg">
             <div class="flex items-center justify-between h-[20%]">
-                <div class="h-full w-[28%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
+                <div class="h-full w-[20%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
                     <img src="./assets/emergency.png" class="h-[60%]">
                 </div>
-                <i class="fa-regular fa-heart text-[20px]"></i>
+                <i class="fa-regular fa-heart text-[25px] cursor-pointer"></i>
             </div>
 
             <div>
@@ -266,7 +272,7 @@
                 <p class="text-gray-500">Electricity Outage</p>
             </div>
             <div>
-                <h1 class="font-extrabold text-4xl">16216</h1>
+                <h1 class="font-extrabold text-3xl mb-1">16216</h1>
                 <span class="bg-gray-200 w-[20%] rounded-xl px-3 py-1 text-gray-500">Electricity</span>
 
             </div>
@@ -286,12 +292,12 @@
             </div>
         </div>
 
-        <div class="bg-white h-72 p-3 flex flex-col justify-between rounded-2xl">
+        <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg">
             <div class="flex items-center justify-between h-[20%]">
-                <div class="h-full w-[28%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
-                    <img src="./assets/emergency.png" class="h-[60%]">
+                <div class="h-full w-[20%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
+                    <img src="./assets/brac.png" class="h-[75%]">
                 </div>
-                <i class="fa-regular fa-heart text-[20px]"></i>
+                <i class="fa-regular fa-heart text-[25px] cursor-pointer"></i>
             </div>
 
             <div>
@@ -299,7 +305,7 @@
                 <p class="text-gray-500">Brac</p>
             </div>
             <div>
-                <h1 class="font-extrabold text-4xl">16445</h1>
+                <h1 class="font-extrabold text-3xl mb-1">16445</h1>
                 <span class="bg-gray-200 w-[20%] rounded-xl px-3 py-1 text-gray-500">NGO</span>
 
             </div>
@@ -319,12 +325,12 @@
             </div>
         </div>
 
-        <div class="bg-white h-72 p-3 flex flex-col justify-between rounded-2xl">
+        <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg">
             <div class="flex items-center justify-between h-[20%]">
-                <div class="h-full w-[28%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
-                    <img src="./assets/emergency.png" class="h-[60%]">
+                <div class="h-full w-[20%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
+                    <img src="./assets/Bangladesh-Railway.png" class="h-[85%]">
                 </div>
-                <i class="fa-regular fa-heart text-[20px]"></i>
+                <i class="fa-regular fa-heart text-[25px] cursor-pointer"></i>
             </div>
 
             <div>
@@ -332,7 +338,7 @@
                 <p class="text-gray-500">Bangladesh Railway</p>
             </div>
             <div>
-                <h1 class="font-extrabold text-4xl">163</h1>
+                <h1 class="font-extrabold text-3xl mb-1">163</h1>
                 <span class="bg-gray-200 w-[20%] rounded-xl px-3 py-1 text-gray-500">Travel</span>
 
             </div>
@@ -351,6 +357,7 @@
                 </button>
             </div>
         </div>
+
     </section>
 
     <script src="script.js"></script>
