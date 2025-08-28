@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emeregency Service</title>
+    <!-- Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap" rel="stylesheet">
     <!-- Tailwind Css & Daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -12,8 +16,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    
+<body class="hind-madurai-font">
+    <section>
+        <nav class="w-full flex items-center justify-between backdrop-blur-2xl p-2 fixed left-0 top-0">
+            <div class="flex items-center gap-1 h-[40px]">
+                <img src="./assets/logo.png" class="h-full">
+                <div>
+                    <h1 class="font-extrabold text-[#006747]">Emeregency <br> Service</h1>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between gap-3 font-bold">
+                <div class="w-[4rem] h-[2.5rem] bg-[rgba(65,255,106,0.10)] rounded-4xl flex items-center justify-evenly">
+                    <p class="text-[20px]">0</p>
+                    <img src="./assets/heart.png" class="h-[60%]">
+                </div>
+                <div class="w-[4rem] h-[2.5rem] bg-[rgba(65,255,106,0.10)] rounded-4xl flex items-center justify-evenly">
+                    <p class="text-[20px]">0</p>
+                    <img src="./assets/coin.png" class="h-[60%]">
+                </div>
+                <div class="w-[4.4rem] h-[2.5rem] bg-[#00A63E] rounded-4xl flex items-center justify-evenly text-white">
+                    <p class="text-[20px]">0</p>
+                    <p class="text-[18px]">Copy</p>
+                </div>
+            </div>
+        </nav>
+        <div></div>
+    </section>
 
     <script src="script.js"></script>
 </body>
