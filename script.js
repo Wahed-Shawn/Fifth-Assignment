@@ -101,6 +101,6 @@ callIcon('call-rail', 'msg-rail', 'service-rail')
 // Clear Button functionality
 document.getElementById('clearBtn').addEventListener('click', function () {
     callHistoryData = []
-    const callHistoryContainer = document.getElementById('call-history-container').innerText = ''
+    document.getElementById('call-history-container').innerText = ''
 
 })
