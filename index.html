@@ -39,11 +39,11 @@
                 </div>
                 <div
                     class="w-[4rem] h-[2.5rem] bg-[rgba(65,255,106,0.10)] rounded-4xl flex items-center justify-evenly">
-                    <p class="text-[20px]">100</p>
+                    <p class="text-[20px]" id="coinCount">100</p>
                     <img src="./assets/coin.png" class="h-[60%]">
                 </div>
                 <div class="w-[4.4rem] h-[2.5rem] bg-[#00A63E] rounded-4xl flex items-center justify-evenly text-white">
-                    <p class="text-[20px]">0</p>
+                    <p class="text-[20px]" id="copyCount">0</p>
                     <p class="text-[18px]">Copy</p>
                 </div>
             </div>
@@ -74,20 +74,21 @@
                 <p class="text-gray-500">National Emergency</p>
             </div>
             <div>
-                <h1 class="font-extrabold text-3xl mb-1">999</h1>
+                <h1 class="font-extrabold text-3xl mb-1" id="msg-national">999</h1>
                 <span class="bg-gray-200 w-[20%] rounded-xl px-3 py-1 text-gray-500">All</span>
 
             </div>
 
             <div class="flex justify-between">
                 <button
-                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 group hover:bg-green-600 focus:bg-green-600">
+                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 group hover:bg-green-600 focus:bg-green-600"
+                    id="copy-national">
                     <i class="fa-regular fa-copy text-gray-500 group-hover:text-white group-focus:text-white"></i>
                     <span class="text-gray-500 group-hover:text-white group-focus:text-white">Copy</span>
                 </button>
 
                 <button
-                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 bg-green-500 hover:bg-green-700 focus:bg-green-700">
+                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 bg-green-500 hover:bg-green-700 focus:bg-green-700" id="call-national">
                     <i class="fa-solid fa-phone text-white"></i>
                     <span class="text-white">Call</span>
                 </button>
@@ -107,20 +108,21 @@
                 <p class="text-gray-500">Police</p>
             </div>
             <div>
-                <h1 class="font-extrabold text-3xl mb-1">999</h1>
+                <h1 class="font-extrabold text-3xl mb-1" id="msg-police">999</h1>
                 <span class="bg-gray-200 w-[20%] rounded-xl px-3 py-1 text-gray-500">Police</span>
 
             </div>
 
             <div class="flex justify-between">
                 <button
-                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 group hover:bg-green-600 focus:bg-green-600">
+                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 group hover:bg-green-600 focus:bg-green-600"
+                    id="copy-police">
                     <i class="fa-regular fa-copy text-gray-500 group-hover:text-white group-focus:text-white"></i>
                     <span class="text-gray-500 group-hover:text-white group-focus:text-white">Copy</span>
                 </button>
 
                 <button
-                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 bg-green-500 hover:bg-green-700 focus:bg-green-700">
+                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 bg-green-500 hover:bg-green-700 focus:bg-green-700" id="call-police">
                     <i class="fa-solid fa-phone text-white"></i>
                     <span class="text-white">Call</span>
                 </button>
@@ -140,20 +142,21 @@
                 <p class="text-gray-500">Fire Service</p>
             </div>
             <div>
-                <h1 class="font-extrabold text-3xl mb-1">999</h1>
+                <h1 class="font-extrabold text-3xl mb-1" id="msg-fire">999</h1>
                 <span class="bg-gray-200 w-[20%] rounded-xl px-3 py-1 text-gray-500">Fire</span>
 
             </div>
 
             <div class="flex justify-between">
                 <button
-                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 group hover:bg-green-600 focus:bg-green-600">
+                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 group hover:bg-green-600 focus:bg-green-600"
+                    id="copy-fire">
                     <i class="fa-regular fa-copy text-gray-500 group-hover:text-white group-focus:text-white"></i>
                     <span class="text-gray-500 group-hover:text-white group-focus:text-white">Copy</span>
                 </button>
 
                 <button
-                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 bg-green-500 hover:bg-green-700 focus:bg-green-700">
+                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 bg-green-500 hover:bg-green-700 focus:bg-green-700" id="call-fire">
                     <i class="fa-solid fa-phone text-white"></i>
                     <span class="text-white">Call</span>
                 </button>
@@ -173,20 +176,21 @@
                 <p class="text-gray-500">Ambulance</p>
             </div>
             <div>
-                <h1 class="font-extrabold text-3xl mb-1">1994-999999</h1>
+                <h1 class="font-extrabold text-3xl mb-1" id="msg-ambulance">1994-999999</h1>
                 <span class="bg-gray-200 w-[20%] rounded-xl px-3 py-1 text-gray-500">Health</span>
 
             </div>
 
             <div class="flex justify-between">
                 <button
-                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 group hover:bg-green-600 focus:bg-green-600">
+                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 group hover:bg-green-600 focus:bg-green-600"
+                    id="copy-ambulance">
                     <i class="fa-regular fa-copy text-gray-500 group-hover:text-white group-focus:text-white"></i>
                     <span class="text-gray-500 group-hover:text-white group-focus:text-white">Copy</span>
                 </button>
 
                 <button
-                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 bg-green-500 hover:bg-green-700 focus:bg-green-700">
+                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 bg-green-500 hover:bg-green-700 focus:bg-green-700" id="call-ambulance">
                     <i class="fa-solid fa-phone text-white"></i>
                     <span class="text-white">Call</span>
                 </button>
@@ -206,20 +210,21 @@
                 <p class="text-gray-500">Women & Child Helpline</p>
             </div>
             <div>
-                <h1 class="font-extrabold text-3xl mb-1">109</h1>
+                <h1 class="font-extrabold text-3xl mb-1" id="msg-child">109</h1>
                 <span class="bg-gray-200 w-[20%] rounded-xl px-3 py-1 text-gray-500">Help</span>
 
             </div>
 
             <div class="flex justify-between">
                 <button
-                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 group hover:bg-green-600 focus:bg-green-600">
+                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 group hover:bg-green-600 focus:bg-green-600"
+                    id="copy-child">
                     <i class="fa-regular fa-copy text-gray-500 group-hover:text-white group-focus:text-white"></i>
                     <span class="text-gray-500 group-hover:text-white group-focus:text-white">Copy</span>
                 </button>
 
                 <button
-                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 bg-green-500 hover:bg-green-700 focus:bg-green-700">
+                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 bg-green-500 hover:bg-green-700 focus:bg-green-700" id="call-child">
                     <i class="fa-solid fa-phone text-white"></i>
                     <span class="text-white">Call</span>
                 </button>
@@ -239,20 +244,21 @@
                 <p class="text-gray-500">Anti-Corruption</p>
             </div>
             <div>
-                <h1 class="font-extrabold text-3xl mb-1">106</h1>
+                <h1 class="font-extrabold text-3xl mb-1" id="msg-corruption">106</h1>
                 <span class="bg-gray-200 w-[20%] rounded-xl px-3 py-1 text-gray-500">Govt.</span>
 
             </div>
 
             <div class="flex justify-between">
                 <button
-                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 group hover:bg-green-600 focus:bg-green-600">
+                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 group hover:bg-green-600 focus:bg-green-600"
+                    id="copy-corruption">
                     <i class="fa-regular fa-copy text-gray-500 group-hover:text-white group-focus:text-white"></i>
                     <span class="text-gray-500 group-hover:text-white group-focus:text-white">Copy</span>
                 </button>
 
                 <button
-                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 bg-green-500 hover:bg-green-700 focus:bg-green-700">
+                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 bg-green-500 hover:bg-green-700 focus:bg-green-700" id="call-corruption">
                     <i class="fa-solid fa-phone text-white"></i>
                     <span class="text-white">Call</span>
                 </button>
@@ -272,20 +278,21 @@
                 <p class="text-gray-500">Electricity Outage</p>
             </div>
             <div>
-                <h1 class="font-extrabold text-3xl mb-1">16216</h1>
+                <h1 class="font-extrabold text-3xl mb-1" id="msg-electricity">16216</h1>
                 <span class="bg-gray-200 w-[20%] rounded-xl px-3 py-1 text-gray-500">Electricity</span>
 
             </div>
 
             <div class="flex justify-between">
                 <button
-                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 group hover:bg-green-600 focus:bg-green-600">
+                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 group hover:bg-green-600 focus:bg-green-600"
+                    id="copy-electricity">
                     <i class="fa-regular fa-copy text-gray-500 group-hover:text-white group-focus:text-white"></i>
                     <span class="text-gray-500 group-hover:text-white group-focus:text-white">Copy</span>
                 </button>
 
                 <button
-                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 bg-green-500 hover:bg-green-700 focus:bg-green-700">
+                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 bg-green-500 hover:bg-green-700 focus:bg-green-700" id="call-electricity">
                     <i class="fa-solid fa-phone text-white"></i>
                     <span class="text-white">Call</span>
                 </button>
@@ -305,20 +312,21 @@
                 <p class="text-gray-500">Brac</p>
             </div>
             <div>
-                <h1 class="font-extrabold text-3xl mb-1">16445</h1>
+                <h1 class="font-extrabold text-3xl mb-1" id="msg-brac">16445</h1>
                 <span class="bg-gray-200 w-[20%] rounded-xl px-3 py-1 text-gray-500">NGO</span>
 
             </div>
 
             <div class="flex justify-between">
                 <button
-                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 group hover:bg-green-600 focus:bg-green-600">
+                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 group hover:bg-green-600 focus:bg-green-600"
+                    id="copy-brac">
                     <i class="fa-regular fa-copy text-gray-500 group-hover:text-white group-focus:text-white"></i>
                     <span class="text-gray-500 group-hover:text-white group-focus:text-white">Copy</span>
                 </button>
 
                 <button
-                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 bg-green-500 hover:bg-green-700 focus:bg-green-700">
+                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 bg-green-500 hover:bg-green-700 focus:bg-green-700" id="call-brac">
                     <i class="fa-solid fa-phone text-white"></i>
                     <span class="text-white">Call</span>
                 </button>
@@ -338,20 +346,21 @@
                 <p class="text-gray-500">Bangladesh Railway</p>
             </div>
             <div>
-                <h1 class="font-extrabold text-3xl mb-1">163</h1>
+                <h1 class="font-extrabold text-3xl mb-1" id="msg-rail">163</h1>
                 <span class="bg-gray-200 w-[20%] rounded-xl px-3 py-1 text-gray-500">Travel</span>
 
             </div>
 
             <div class="flex justify-between">
                 <button
-                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 group hover:bg-green-600 focus:bg-green-600">
+                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 group hover:bg-green-600 focus:bg-green-600"
+                    id="copy-rail">
                     <i class="fa-regular fa-copy text-gray-500 group-hover:text-white group-focus:text-white"></i>
                     <span class="text-gray-500 group-hover:text-white group-focus:text-white">Copy</span>
                 </button>
 
                 <button
-                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 bg-green-500 hover:bg-green-700 focus:bg-green-700">
+                    class="btn btn-outline btn-secondary w-[46%] border-gray-400 bg-green-500 hover:bg-green-700 focus:bg-green-700" id="call-rail">
                     <i class="fa-solid fa-phone text-white"></i>
                     <span class="text-white">Call</span>
                 </button>
