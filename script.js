@@ -26,19 +26,22 @@ function copyIcon(id1, id2) {
         document.getElementById('copyCount').innerText = copyCount
 
         let msg = document.getElementById(id2).innerText
-        alert(`Number copied: ${msg}`)
         console.log(msg);
+
+        navigator.clipboard.writeText(msg).then(function(){
+            alert(`Number copied: ${msg}`)
+        })
     })
 }
 copyIcon('copy-national', 'msg-national')
-copyIcon('copy-police')
-copyIcon('copy-fire')
-copyIcon('copy-ambulance')
-copyIcon('copy-child')
-copyIcon('copy-corruption')
-copyIcon('copy-electricity')
-copyIcon('copy-brac')
-copyIcon('copy-rail')
+copyIcon('copy-police', 'msg-police')
+copyIcon('copy-fire', 'msg-fire')
+copyIcon('copy-ambulance', 'msg-ambulance')
+copyIcon('copy-child', 'msg-child')
+copyIcon('copy-corruption', 'msg-corruption')
+copyIcon('copy-electricity', 'msg-electricity')
+copyIcon('copy-brac', 'msg-brac')
+copyIcon('copy-rail', 'msg-rail')
 
 
 // Calling functionality
