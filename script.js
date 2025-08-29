@@ -28,8 +28,8 @@ function copyIcon(id1, id2) {
         let msg = document.getElementById(id2).innerText
         console.log(msg);
 
-        navigator.clipboard.writeText(msg).then(function(){
-            alert(`Number copied: ${msg}`)
+        navigator.clipboard.writeText(msg).then(function () {
+            alert(`Number has copied: ${msg}`)
         })
     })
 }
@@ -52,18 +52,18 @@ function callIcon(id1, id2, id3) {
         if (coinCount > 0) {
             coinCount -= 20
             document.getElementById('coinCount').innerText = coinCount
-            alert(`Calling to ${document.getElementById(id2).innerText}...`)
+            alert(`📞 Calling ${document.getElementById(id3).innerText} ${document.getElementById(id2).innerText}.....`)
         }
         else {
 
-            return (alert('not enough coin!!!'))
+            return (alert('❌ You do not have enough coin! You need atleast 20 points to call.'))
         }
 
         // Call History Functionality
         const data = {
             serviceName: document.getElementById(id3).innerText,
             phoneNumber: document.getElementById(id2).innerText,
-            date: new Date().toLocaleTimeString()
+            date: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true })
         }
 
         callHistoryData.push(data)
@@ -76,10 +76,10 @@ function callIcon(id1, id2, id3) {
             div.innerHTML = `
                 <div class="flex items-center justify-between p-4">
                 <div>
-                    <h1 class="font-semibold text-[18px]">${data.serviceName}</h1>
+                    <h1 class="font-semibold text-[18px] xl:text-[15px]">${data.serviceName}</h1>
                     <p class="text-gray-500 text-[18px]">${data.phoneNumber}</p>
                 </div>
-                <p class="text-[18px]">${data.date}</p>
+                <p class="text-[18px] xl:text-[14px]">${data.date}</p>
             </div>
             `
             callHistoryContainer.appendChild(div)

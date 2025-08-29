@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="hind-madurai-font bg-[rgba(65,255,106,0.10)] xl:mx-auto">
+<body class="hind-madurai-font bg-[rgba(65,255,106,0.10)] xl:max-w-7xl xl:mx-auto">
     <!------------------------ Hero Section ----------------------------------->
     <section>
         <nav class="w-full h-14 flex items-center justify-between backdrop-blur-2xl p-2 fixed left-0 top-0">
@@ -33,16 +33,16 @@
 
             <div class="flex items-center justify-between gap-3 font-bold">
                 <div
-                    class="w-[4rem] h-[2.5rem] bg-[rgba(65,255,106,0.10)] rounded-4xl flex items-center justify-evenly">
+                    class="w-[4rem] h-[2.5rem] bg-[rgba(65,255,106,0.10)] rounded-4xl flex items-center justify-evenly xl:w-[5rem]">
                     <p class="text-[20px]" id="heartCount">0</p>
                     <img src="./assets/heart.png" class="h-[60%]">
                 </div>
                 <div
-                    class="w-[4rem] h-[2.5rem] bg-[rgba(65,255,106,0.10)] rounded-4xl flex items-center justify-evenly">
+                    class="w-[4rem] h-[2.5rem] bg-[rgba(65,255,106,0.10)] rounded-4xl flex items-center justify-evenly xl:w-[5rem]">
                     <p class="text-[20px]" id="coinCount">100</p>
                     <img src="./assets/coin.png" class="h-[60%]">
                 </div>
-                <div class="w-[4.4rem] h-[2.5rem] bg-[#00A63E] rounded-4xl flex items-center justify-evenly text-white">
+                <div class="w-[4.4rem] h-[2.5rem] bg-[#00A63E] rounded-4xl flex items-center justify-evenly text-white xl:w-[5.2rem]">
                     <p class="text-[20px]" id="copyCount">0</p>
                     <p class="text-[18px]">Copy</p>
                 </div>
@@ -58,12 +58,11 @@
         </div>
     </section>
 
-    <section class="flex flex-col">
-
+    <section class="flex flex-col xl:flex-row xl:w-full xl:p-4">
         <!------------------------ Card Section ----------------------------------->
-        <section class="p-3 grid grid-cols-1 justify-items-center gap-4" id="card-container">
+        <section class=" grid grid-cols-1 justify-items-center gap-4 xl:w-4/5 xl:grid-cols-3" id="card-container">
 
-            <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg">
+            <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg xl:w-[300px]">
                 <div class="flex items-center justify-between h-[20%]">
                     <div class="h-full w-[20%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
                         <img src="./assets/emergency.png" class="h-[60%]">
@@ -98,7 +97,7 @@
                 </div>
             </div>
 
-            <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg">
+            <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg xl:w-[300px]">
                 <div class="flex items-center justify-between h-[20%]">
                     <div class="h-full w-[20%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
                         <img src="./assets/police.png" class="h-[70%]">
@@ -133,7 +132,7 @@
                 </div>
             </div>
 
-            <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg">
+            <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg xl:w-[300px]">
                 <div class="flex items-center justify-between h-[20%]">
                     <div class="h-full w-[20%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
                         <img src="./assets/fire-service.png" class="h-[70%]">
@@ -168,7 +167,7 @@
                 </div>
             </div>
 
-            <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg">
+            <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg xl:w-[300px]">
                 <div class="flex items-center justify-between h-[20%]">
                     <div class="h-full w-[20%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
                         <img src="./assets/ambulance.png" class="h-[70%]">
@@ -203,7 +202,7 @@
                 </div>
             </div>
 
-            <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg">
+            <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg xl:w-[300px]">
                 <div class="flex items-center justify-between h-[20%]">
                     <div class="h-full w-[20%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
                         <img src="./assets/emergency.png" class="h-[60%]">
@@ -238,7 +237,7 @@
                 </div>
             </div>
 
-            <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg">
+            <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg xl:w-[300px]">
                 <div class="flex items-center justify-between h-[20%]">
                     <div class="h-full w-[20%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
                         <img src="./assets/emergency.png" class="h-[60%]">
@@ -273,7 +272,7 @@
                 </div>
             </div>
 
-            <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg">
+            <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg xl:w-[300px]">
                 <div class="flex items-center justify-between h-[20%]">
                     <div class="h-full w-[20%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
                         <img src="./assets/emergency.png" class="h-[60%]">
@@ -308,7 +307,7 @@
                 </div>
             </div>
 
-            <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg">
+            <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg xl:w-[300px]">
                 <div class="flex items-center justify-between h-[20%]">
                     <div class="h-full w-[20%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
                         <img src="./assets/brac.png" class="h-[75%]">
@@ -343,7 +342,7 @@
                 </div>
             </div>
 
-            <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg">
+            <div class="bg-white h-72 w-[350px] p-4 flex flex-col justify-between rounded-2xl shadow-lg xl:w-[300px]">
                 <div class="flex items-center justify-between h-[20%]">
                     <div class="h-full w-[20%] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
                         <img src="./assets/Bangladesh-Railway.png" class="h-[85%]">
@@ -381,7 +380,7 @@
         </section>
 
         <!------------------------ Call History Section  ---------------------->
-        <section class="bg-white w-[85%] p-3 rounded-2xl shadow-md mx-auto" >
+        <section class="bg-white w-[85%] p-3 mt-4 rounded-2xl shadow-md mx-auto xl:w-[24%] xl:ml-3 xl:mt-0" >
             <div class="flex items-center justify-between mb-2">
                 <div class="flex items-center justify-center gap-1">
                     <i class="fa-regular fa-clock text-2xl text-gray-500"></i>
